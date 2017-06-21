@@ -1,11 +1,9 @@
 #
 # Dockerfile for a catch-all SMTP server
 #
-FROM debian:jessie
+FROM ubuntu:trusty
 
-MAINTAINER Vampouille "julien.acroute@camptocamp.com"
-
-ENV DEBIAN_FRONTEND noninterative
+-MAINTAINER Vampouille "julien.acroute@camptocamp.com"
 
 RUN apt-get update && \
     apt-get install -y postfix courier-base && \

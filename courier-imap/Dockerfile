@@ -1,11 +1,9 @@
 #
 # Dockerfile for a IMAP server
 #
-FROM debian:jessie
+FROM ubuntu:trusty
 
 MAINTAINER Vampouille "julien.acroute@camptocamp.com"
-
-ENV DEBIAN_FRONTEND noninterative
 
 # Avoid ERROR: invoke-rc.d: policy-rc.d denied execution of start. 
 RUN echo "#!/bin/sh\nexit 0" > /usr/sbin/policy-rc.d
