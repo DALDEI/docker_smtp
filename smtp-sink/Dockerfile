@@ -3,7 +3,7 @@
 #
 FROM ubuntu:trusty
 
--MAINTAINER Vampouille "julien.acroute@camptocamp.com"
+MAINTAINER Vampouille "julien.acroute@camptocamp.com"
 
 RUN apt-get update && \
     apt-get install -y postfix courier-base && \
